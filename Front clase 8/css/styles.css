@@ -1,0 +1,205 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+header {
+    background-color: #f8b4c1;
+     width: 100%;
+}
+.logo{
+    width: 50px;
+}
+.menu-fijo{
+    display: flex;
+    gap: 20px;
+    position: relative;
+   background-color: #f8b4c1;
+   justify-content: center;
+}
+nav ul {
+    display: flex;
+    gap: 10px; 
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block; 
+}
+
+nav{
+    display: inline-block;
+}
+
+nav li a{
+background-color: #f8b4c1;
+color: white;
+text-decoration: none;
+padding: 10px 15px;
+display:inline-block;
+
+}
+nav li a:hover {
+    background-color:white;
+    color: black;
+}
+
+.slider-frame {
+    width: 1000px; /* Ajusta el ancho según necesites */
+    height: 500px; /* Ajusta la altura según necesites */
+    margin: 50px auto;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center; /* Centra las imágenes verticalmente */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+}
+
+.slider-frame ul {
+    display: flex;
+    width: 400%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    animation: slide 16s infinite;
+}
+
+.slider-frame li {
+    width: 100%;
+    flex: 0 0 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-frame img {
+    max-width: 100%;  /* Asegura que la imagen no se desborde */
+    max-height: 100%; /* Evita que la imagen sea más grande que el carrusel */
+    object-fit: scale-down; /* Ajusta la imagen sin recortarla ni deformarla */
+    display: block;
+}
+
+@keyframes slide {
+    0%, 20% { transform: translateX(0%); }
+    25%, 45% { transform: translateX(-100%); }
+    50%, 70% { transform: translateX(-200%); }
+    75%, 95% { transform: translateX(-300%); }
+}
+
+
+.conteiner {
+    display: flex; /* Activa el modelo de caja flexible */
+    flex-wrap: wrap; /* Permite que las tarjetas bajen si no hay espacio */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    gap: 20px; /* Espacio entre tarjetas */
+    padding: 20px;
+   
+}
+.card {
+    flex: 1 1 300px; 
+    max-width: 350px; 
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative; 
+    text-align: center; 
+}
+.icon{
+    position: absolute;
+    max-width: 20px;
+}
+.card img {
+    width: 50%;
+    height: auto;
+    border-bottom: 2px solid #f8b4c1;
+}
+.card h1 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.card p {
+    font-size: 14px;
+    color: #555;
+}
+.card button {
+    background-color: #f8b4c1;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+.card button:hover {
+    background-color: #e89aa3;
+}
+.container-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: #f8b4c1;
+    padding: 40px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Asegura que las columnas estén en línea */
+}
+
+.footer-links {
+    width: 30%; /* Ajusta el ancho para que estén alineados */
+    padding: 0 15px;
+    text-align: center;
+}
+
+.footer-links h4 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #00c3ff;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: white;
+    font-size: 24px;
+}
+
+.social-icons a:hover {
+    color: #00c3ff;
+}
